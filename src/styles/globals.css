@@ -12,4 +12,18 @@
     --scroll-behavior: smooth !important;
     scroll-behavior: smooth !important;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Prompt";
+  }
+}
+
+@layer components {
+  .active_menu {
+    @apply underline underline-offset-8 decoration-2 decoration-red-600;
+  }
 }

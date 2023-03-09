@@ -1,7 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
-import type { AppState } from "@/features/store";
-import { IApp, ThemeType } from "src/interfaces";
+import { IApp, ThemeType, MenuType } from "src/interfaces";
 
 // Define the initial state using that type
 const initialState: IApp = {
@@ -16,9 +15,9 @@ export const counterSlice = createSlice({
   // `createSlice` will infer the state type from the `initialState` argument
   initialState,
   reducers: {
-    toggleThemeMode: (state) => {
-      if (state.themeMode === "dark") state.themeMode = "light";
-      else state.themeMode = "dark";
+    updateAvtiveMenu: (state, action: PayloadAction<MenuType>) => {
+      state.currentMenu = action.payload;
+      state.openMenu = false;
     },
     setThemeMode: (state, action: PayloadAction<ThemeType>) => {
       state.themeMode = action.payload;
@@ -30,14 +29,22 @@ export const counterSlice = createSlice({
     toggleOpenMobileMenu: (state) => {
       state.openMenu = !state.openMenu;
     },
+    openMobileMenu: (state) => {
+      state.openMenu = true;
+    },
+    closeMobileMenu: (state) => {
+      state.openMenu = false;
+    },
   },
 });
 
 export const {
   setThemeMode,
-  toggleThemeMode,
+  updateAvtiveMenu,
   toggleLocale,
   toggleOpenMobileMenu,
+  openMobileMenu,
+  closeMobileMenu,
 } = counterSlice.actions;
 
 export default counterSlice.reducer;

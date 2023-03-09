@@ -1,3 +1,10 @@
 {
-  "title": "Home Page"
+  "title": "Home Page",
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "experience": "Experience",
+    "contact": "Contact"
+  }
 }

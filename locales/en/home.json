@@ -1,3 +1,14 @@
 {
-  "title": "Home Page"
+  "title": "Home Page",
+  "content": "Our portfolio page",
+  "home": {
+    "title": "I'm a Web Developer",
+    "description": "I have of 10 years of experience building and designing software. Currently, I love to work on web application using technologies like NodeJS, NestJS, Laravel, ASP.Net Core, React, NextJS, Docker, Github and more.",
+    "button": "Portfolio"
+  },
+  "about": {
+    "topic": "About Me",
+    "title": "Hi!, I'm Kraipon Najaroon",
+    "description": "I have 10 years of experience building and designing software. I begin my first job on july 2010 at Nidec Copal company in software engineer and responsibility about electronic design and cartesian robot for support the production line. Currently, I love to work on web application using technologies like NodeJS, NestJS, Laravel, ASP.Net Core, React, NextJS, Docker, Github and etc."
+  }
 }

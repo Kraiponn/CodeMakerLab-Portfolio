@@ -17,6 +17,7 @@ module.exports = {
       animation: {
         "anim-header": "anim-header 2s linear alternate infinite",
         "anim-header-start": "anim-header-start 1s linear",
+        "from-top": "from-top 2s linear",
       },
       keyframes: {
         "anim-header-start": {
@@ -28,6 +29,11 @@ module.exports = {
           "0%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-25px)" },
           "100%": { transform: "translateY(25px)" },
+        },
+        "from-top": {
+          "0%": { transform: "translateY(-25px)", opacity: 0 },
+          "50%": { transform: "translateY(25px)", opacity: 0.7 },
+          "100%": { transform: "translateY(0px)", opacity: 1 },
         },
       },
     },
