@@ -9,6 +9,28 @@
   "about": {
     "topic": "About Me",
     "title": "Hi!, I'm Kraipon Najaroon",
-    "description": "I have 10 years of experience building and designing software. I begin my first job on july 2010 at Nidec Copal company in software engineer and responsibility about electronic design and cartesian robot for support the production line. Currently, I love to work on web application using technologies like NodeJS, NestJS, Laravel, ASP.Net Core, React, NextJS, Docker, Github and etc."
+    "description": "I have 10 years of experience building and designing software. I begin my first job on july 2010 at Nidec Copal company in software engineer and responsibility about electronic design and cartesian robot for support the production line. Currently, I love to work on web application using technologies like NodeJS, NestJS, Laravel, ASP.Net Core, React, NextJS, Docker, Github and etc.",
+    "experiences": {
+      "job1": {
+        "timeline": "Jul 2010 – Oct 2013",
+        "detail": "Software engineer at Nidec copal company(Thailand)."
+      },
+      "job2": {
+        "timeline": "Dec 2013 – Oct 2014",
+        "detail": "Programmer at Fabrinet company limited."
+      },
+      "job3": {
+        "timeline": "Oct 2014 – July 2016",
+        "detail": "Software engineer at Magnecomp precision technology."
+      },
+      "job4": {
+        "timeline": "Jul 2016 - Aug 2017",
+        "detail": "Mobile developer at JY innovation company."
+      },
+      "job5": {
+        "timeline": "Aug 2017 to Now",
+        "detail": "Freelancer in full stack developer on web technology."
+      }
+    }
   }
 }

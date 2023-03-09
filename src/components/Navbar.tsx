@@ -7,7 +7,7 @@ import { useTheme } from "next-themes";
 import useTranslation from "next-translate/useTranslation";
 
 import { useAppDispatch, useAppSelector } from "@/features/hooks";
-import { MenuType } from "@/interfaces";
+import { MenuType, ThemeType } from "@/interfaces";
 import {
   toggleLocale,
   updateAvtiveMenu,
@@ -22,36 +22,19 @@ import EnFlag from "../../public/images/en-flag.png";
 import ThFlag from "../../public/images/th-flag.png";
 
 /**
+ ****************************************************************************************
  *  Navigation Bar Function
- *  @param       interface
  *  @returns     JSX.Element
+ ****************************************************************************************
  */
 const Navbar = () => {
   const router = useRouter();
   const { t } = useTranslation("common");
-  const [mounted, setMounted] = React.useState(false);
-  const { theme, setTheme, systemTheme } = useTheme();
-  const { openMenu, locale, currentMenu } = useAppSelector(
+  const { theme, setTheme } = useTheme();
+  const { openMenu, locale, themeMode, currentMenu } = useAppSelector(
     (store) => store.appThemes
   );
   const dispatch = useAppDispatch();
-
-  const currentTheme = theme === "system" ? systemTheme : theme;
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  React.useEffect(() => {
-    setMounted(true);
-    setTheme(currentTheme === "dark" ? "dark" : "light");
-  }, [currentTheme, setTheme]);
-
-  React.useEffect(() => {
-    router.push(router.pathname, router.pathname, { locale });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [locale]);
-
-  if (!mounted) {
-    return null;
-  }
 
   const handleOpenMobileMenu = () => {
     dispatch(openMobileMenu());
@@ -65,14 +48,20 @@ const Navbar = () => {
     dispatch(toggleLocale());
   };
 
-  const handleToggleThemeMode = () => {
-    if (theme === "dark") setTheme("light");
-    else setTheme("dark");
+  const handleToggleThemeMode = (mode: ThemeType) => {
+    setTheme(mode);
   };
 
   const handleUpdateActiveMenu = (menuType: MenuType) => {
     dispatch(updateAvtiveMenu(menuType));
   };
+
+  React.useEffect(() => {
+    router.push(`/#${currentMenu}`, `/#${currentMenu}`, {
+      locale,
+    });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [locale]);
 
   return (
     <>
@@ -208,7 +197,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          {/*-----   Theme & Locale Menu  -----*/}
+          {/*-----   Locale & Theme Menu  -----*/}
           <div className="flex items-center gap-5">
             <button
               className="text-slate-900 dark:text-yellow-300"
@@ -235,13 +224,11 @@ const Navbar = () => {
               )}
             </button>
 
-            <button
-              className="text-slate-900 dark:text-yellow-300"
-              onClick={handleToggleThemeMode}
-            >
-              {theme === "dark" ? (
-                <FaSun size={28} />
-              ) : (
+            {theme === "light" ? (
+              <button
+                className="text-slate-900 dark:text-yellow-300"
+                onClick={() => handleToggleThemeMode("dark")}
+              >
                 <Image
                   src={DarkModeIcon}
                   alt="Theme mode button"
@@ -250,8 +237,15 @@ const Navbar = () => {
                   sizes="100vw"
                   className="w-[20px] h-[20px]"
                 />
-              )}
-            </button>
+              </button>
+            ) : (
+              <button
+                className="text-slate-900 dark:text-yellow-300"
+                onClick={() => handleToggleThemeMode("light")}
+              >
+                <FaSun size={25} />
+              </button>
+            )}
           </div>
 
           {/*-----   Mobile Button Menu  -----*/}

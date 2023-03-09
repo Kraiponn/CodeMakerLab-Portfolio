@@ -9,7 +9,7 @@ export type MenuType =
 
 export interface IApp {
   themeMode: ThemeType;
-  locale: LocalesType;
-  currentMenu: MenuType;
+  locale: string;
+  currentMenu: string;
   openMenu: boolean;
 }
