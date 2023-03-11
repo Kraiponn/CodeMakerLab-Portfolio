@@ -23,7 +23,7 @@ export function Layout({ title, content, children }: Props) {
       </Head>
 
       <Navbar />
-      <main>{children}</main>
+      <main className="min-w-[400px]">{children}</main>
     </>
   );
 }

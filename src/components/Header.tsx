@@ -38,23 +38,23 @@ export default function Header({
   return (
     <div
       id="home"
-      className="relative text-4xl w-full h-screen bg-gradient-to-b from-white via-blue-200 to-white"
+      className="relative w-full h-screen text-4xl bg-gradient-to-b from-white via-gray-100 to-white dark:bg-none"
       style={{
         backgroundImage: theme === "dark" ? "url(./images/banner-bg.png)" : "",
       }}
     >
-      <div className="absolute top-1/4 left-1/2 w-3/4 translate-x-[-50%] md:w-1/2 md:top-1/2 md:left-2 md:pl-12 md:translate-x-0">
-        <h1 className="text-red-600 dark:text-white text-2xl font-bold md:text-4xl lg:text-6xl">
+      <div className="absolute top-[15%] left-1/2 w-3/4 translate-x-[-50%] md:w-1/2 md:top-1/4 md:left-2 md:pl-12 md:translate-x-0">
+        <h1 className="text-2xl font-bold text-black dark:text-white md:text-4xl lg:text-6xl">
           <Typed strings={[title]} typeSpeed={100} backSpeed={100} loop />
         </h1>
-        <p className="text-sm text-gray-600 dark:text-gray-400 indent-6 mt-5">
+        <p className="mt-5 text-xs text-gray-900 break-all md:text-base dark:text-gray-400 indent-6">
           {description}
         </p>
 
         <Link href="#portfolio">
           <button
             onClick={() => handleUdpateActiveMenu("portfolio")}
-            className="flex justify-end items-center text-sm font-light mt-[3rem] text-white border-0 bg-blue-500 dark:bg-rose-600 rounded-md py-2 px-5 hover:shadow-xl hover:scale-110 hover:duration-500"
+            className="flex justify-end items-center ml-auto md:mx-0 text-sm font-light mt-[3rem] text-white border-0 bg-rose-600 rounded-md py-2 px-5 hover:shadow-xl hover:scale-110 hover:duration-100"
           >
             {textButton} &nbsp; <MdEast />
           </button>

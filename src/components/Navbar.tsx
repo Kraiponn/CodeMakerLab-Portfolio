@@ -22,19 +22,18 @@ import EnFlag from "../../public/images/en-flag.png";
 import ThFlag from "../../public/images/th-flag.png";
 
 /**
- ****************************************************************************************
- *  Navigation Bar Function
- *  @returns     JSX.Element
- ****************************************************************************************
+ * ***************************************************************************************
+ *                        >>>>>>>     MAIN METHOD     <<<<<<<
+ * ***************************************************************************************
  */
 const Navbar = () => {
   const router = useRouter();
   const { t } = useTranslation("common");
   const { theme, setTheme } = useTheme();
+  const dispatch = useAppDispatch();
   const { openMenu, locale, themeMode, currentMenu } = useAppSelector(
     (store) => store.appThemes
   );
-  const dispatch = useAppDispatch();
 
   const handleOpenMobileMenu = () => {
     dispatch(openMobileMenu());

@@ -6,9 +6,12 @@ import { useAppDispatch } from "@/features/hooks";
 import { updateAvtiveMenu } from "@/features/store/reducers";
 import { MenuType } from "@/interfaces";
 
-import Header from "@/components/Header";
 import { Layout } from "@/components/Layout";
+import Header from "@/components/Header";
 import About from "@/components/About";
+import Portfolio from "@/components/portfolio";
+import Experience from "@/components/experience";
+import Contact from "@/components/contact";
 
 /**
  * ***************************************************************************************
@@ -48,29 +51,10 @@ export default function Home() {
         handleUdpateActiveMenu={handleUdpateActiveMenu}
       />
 
-      {/*-------    About    -------*/}
       <About />
-
-      <div
-        id="portfolio"
-        className="flex items-center justify-center w-full h-screen text-4xl"
-      >
-        Portfolio
-      </div>
-
-      <div
-        id="experience"
-        className="flex items-center justify-center w-full h-screen text-4xl"
-      >
-        Experience
-      </div>
-
-      <div
-        id="contact"
-        className="flex items-center justify-center w-full h-screen text-4xl"
-      >
-        Contact
-      </div>
+      <Portfolio />
+      <Experience />
+      <Contact />
     </Layout>
   );
 }

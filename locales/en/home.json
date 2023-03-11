@@ -32,5 +32,19 @@
         "detail": "Freelancer in full stack developer on web technology."
       }
     }
+  },
+  "portfolio": {
+    "title": "Portfolio",
+    "description": "Check out some of my work right here"
+  },
+  "experience": {
+    "title": "Experience",
+    "description": "These are the technologies I've worked with",
+    "backend": "Backend",
+    "database": "Database",
+    "frontend": "Frontend & UI Design"
+  },
+  "contact": {
+    "title": "Contact"
   }
 }
