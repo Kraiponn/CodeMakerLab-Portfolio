@@ -12,6 +12,7 @@ import About from "@/components/About";
 import Portfolio from "@/components/portfolio";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
+import Footer from "@/components/Footer";
 
 /**
  * ***************************************************************************************
@@ -55,6 +56,7 @@ export default function Home() {
       <Portfolio />
       <Experience />
       <Contact />
+      <Footer />
     </Layout>
   );
 }

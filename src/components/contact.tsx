@@ -23,7 +23,7 @@ export default function Contact({}: Props) {
   return (
     <div
       id="contact"
-      className="w-full h-screen px-16 py-[54px] flex flex-col md:flex-row items-center"
+      className="w-full px-16 py-[35px] mt-7 flex flex-col md:flex-row items-center"
     >
       {/*-------    Contact Logo    -------*/}
       <div className="relative hidden p-2 md:block">
@@ -41,32 +41,34 @@ export default function Contact({}: Props) {
 
       {/*-------    Contact Form    -------*/}
       <div className="w-[100%] md:w-[70%] mt-7">
-        <h1 className="px-5 text-lg font-bold md:text-2xl lg:text-4xl">{`Get In Touch`}</h1>
+        <h1 className="px-5 text-lg font-bold md:text-2xl lg:text-4xl">
+          {t("contact.form_title")}
+        </h1>
 
         {/* <form action="post"> */}
         <div className="flex flex-col items-center justify-start w-full gap-3 mt-5 md:flex-row">
           <input
             type="text"
-            placeholder={`First Name`}
-            className="w-full px-5 py-3 border-2 rounded-xl"
+            placeholder={t("contact.first_name")}
+            className="w-full px-5 py-3 border-2 rounded-xl focus:ring-4 focus:ring-offset-0 focus:ring-rose-500 focus:border-0 focus:outline-none"
           />
           <input
             type="text"
-            placeholder={`Last Name`}
-            className="w-full px-5 py-3 border-2 rounded-xl"
+            placeholder={t("contact.last_name")}
+            className="w-full px-5 py-3 border-2 rounded-xl focus:ring-4 focus:ring-offset-0 focus:ring-rose-500 focus:border-0 focus:outline-none"
           />
         </div>
 
         <div className="flex flex-col items-center justify-start w-full gap-3 mt-5 md:flex-row">
           <input
             type="email"
-            placeholder={`Email Address`}
-            className="w-full px-5 py-3 border-2 rounded-xl"
+            placeholder={t("contact.email")}
+            className="w-full px-5 py-3 border-2 rounded-xl focus:ring-4 focus:ring-offset-0 focus:ring-rose-500 focus:border-0 focus:outline-none"
           />
           <input
             type="text"
-            placeholder={`Phone No.`}
-            className="w-full px-5 py-3 border-2 rounded-xl"
+            placeholder={t("contact.phone_no")}
+            className="w-full px-5 py-3 border-2 rounded-xl focus:ring-4 focus:ring-offset-0 focus:ring-rose-500 focus:border-0 focus:outline-none"
           />
         </div>
 
@@ -74,16 +76,18 @@ export default function Contact({}: Props) {
           <textarea
             name="message"
             rows={5}
-            placeholder={`Message`}
-            className="w-full px-5 py-3 border-2 rounded-xl"
+            placeholder={t("contact.message")}
+            className="w-full px-5 py-3 border-2 rounded-xl focus:ring-4 focus:ring-offset-0 focus:ring-rose-500 focus:border-0 focus:outline-none"
           />
         </div>
 
         <div className="mt-7">
           <button
             type="button"
-            className="py-3 font-bold text-white border-none rounded-lg hover:-translate-y-1 hover:duration-200 hover:text-slate-500 bg-rose-500 hover:bg-rose-400 px-9"
-          >{`SEND`}</button>
+            className="py-3 font-bold text-white border-none rounded-lg hover:-translate-y-1 hover:duration-200 hover:shadow-2xl active:translate-y-1 bg-rose-500 px-9"
+          >
+            {t("contact.button")}
+          </button>
         </div>
         {/* </form> */}
       </div>

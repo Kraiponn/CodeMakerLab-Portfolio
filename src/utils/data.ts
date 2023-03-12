@@ -39,7 +39,7 @@ export const jobsExperience: IPersonalData[] = [
   {
     id: "5",
     years: `Aug 2017 to Now`,
-    position: `Freelancer Full Stack Developer.`,
+    position: `Freelance Full Stack Developer`,
     company: `Freelancer`,
     responsibility:
       "Develop software on web application using technologies like nodejs(NestJS), php(Laravel), c#(ASP.Net Core), react(NextJS), git, docker and etc",
@@ -166,7 +166,7 @@ export const nidecProjectsTh: IProject[] = [
 export const freelanceProjects: IProject[] = [
   {
     id: "1",
-    name: "Ecommerce Web Site with NestJS & NextJS",
+    name: "Ecommerce Web Site",
     url: "https://github.com/Kraiponn/Elect-Shops",
     picture:
       "https://res.cloudinary.com/kraiponn-dev/image/upload/v1678483141/Screenshot_2022-12-12_130449_a9t8ak.png",

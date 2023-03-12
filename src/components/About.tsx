@@ -35,17 +35,21 @@ export default function About() {
           />
         </div>
 
-        <div className="mt-5">
-          <h3 className="text-sm font-semibold text-center text-blue-600 uppercase sm:text-sm md:text-left">
-            {t("about.topic")}
-          </h3>
-
-          <h2 className="mt-2 text-lg font-bold text-center text-gray-800 sm:text-xl md:text-left md:text-2xl dark:text-red-600">
+        <div className="mt-3">
+          <h2 className="text-lg font-bold text-center text-gray-800 sm:text-xl md:text-left md:text-2xl dark:text-red-600">
             {t("about.title")}
           </h2>
 
+          <h5 className="mt-2 text-xs italic font-normal text-center text-gray-700 dark:text-gray-300 md:text-base md:text-left">
+            {t("about.email")}
+          </h5>
+
+          <h5 className="text-xs font-normal text-center text-gray-700 dark:text-gray-300 md:text-base md:text-left">
+            {t("about.tel")}
+          </h5>
+
           {/*-------    Description    -------*/}
-          <p className="mt-5 text-xs tracking-wide break-all sm:text-sm md:text-base md:mt-7 indent-9">
+          <p className="mt-5 text-xs tracking-wide break-all sm:text-sm md:text-base md:mt-5 indent-9">
             {t("about.description")}
           </p>
         </div>

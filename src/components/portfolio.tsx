@@ -18,7 +18,7 @@ export default function Portfolio() {
 
   return (
     <div id="portfolio" className="w-full px-7 py-[54px]">
-      <h1 className="text-2xl font-bold text-center md:text-4xl mt-9 md:text-left">
+      <h1 className="text-2xl font-bold text-center md:text-4xl mt-9 md:text-left dark:text-yellow-300">
         {t("portfolio.title")}
       </h1>
       <p className="mt-3 text-xs font-normal text-center sm:text-sm md:text-base md:text-left">
@@ -26,7 +26,7 @@ export default function Portfolio() {
       </p>
 
       {/*-----    Card    -----*/}
-      <div className="grid w-full grid-cols-1 my-7 gap-9 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid w-full grid-cols-1 gap-12 my-7 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {projects.map((p) => {
           return (
             <div

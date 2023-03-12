@@ -9,6 +9,8 @@
   "about": {
     "topic": "About Me",
     "title": "Hi!, I'm Kraipon Najaroon",
+    "email": "kraipon.na10@gmail.com",
+    "tel": "095-7396209",
     "description": "I have 10 years of experience building and designing software. I begin my first job on july 2010 at Nidec Copal company in software engineer and responsibility about electronic design and cartesian robot for support the production line. Currently, I love to work on web application using technologies like NodeJS, NestJS, Laravel, ASP.Net Core, React, NextJS, Docker, Github and etc.",
     "experiences": {
       "job1": {
@@ -29,7 +31,7 @@
       },
       "job5": {
         "timeline": "Aug 2017 to Now",
-        "detail": "Freelancer in full stack developer on web technology."
+        "detail": "Freelance full stack developer on web technology."
       }
     }
   },
@@ -45,6 +47,17 @@
     "frontend": "Frontend & UI Design"
   },
   "contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "form_title": "Get In Touch",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Email Address",
+    "phone_no": "Phone No.",
+    "message": "Message",
+    "button": "SEND"
+  },
+  "footer": {
+    "title": "CML",
+    "present": "Copyright 2023. All Rights Reverved"
   }
 }

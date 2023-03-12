@@ -12,7 +12,7 @@ export default function Experience() {
 
   return (
     <div id="experience" className="w-full h-screen px-7 py-[54px]">
-      <h1 className="text-2xl font-bold text-center md:text-4xl mt-9 md:text-left">
+      <h1 className="text-2xl font-bold text-center dark:text-yellow-300 md:text-4xl mt-9 md:text-left">
         {t("experience.title")}
       </h1>
       <p className="mt-3 text-xs font-normal text-left sm:text-sm md:text-base">
