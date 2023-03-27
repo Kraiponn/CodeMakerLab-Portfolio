@@ -86,11 +86,7 @@ export default function Experience() {
         </p>
 
         <p className="flex items-center ml-8 text-xs sm:text-sm md:text-base">
-          <FaHandPointRight /> &nbsp; {`React - NextJS`}
-        </p>
-
-        <p className="flex items-center ml-8 text-xs sm:text-sm md:text-base">
-          <FaHandPointRight /> &nbsp; {`Dart for mobile cross platform`}
+          <FaHandPointRight /> &nbsp; {`React (NextJS), Vue, Angular`}
         </p>
 
         <p className="flex items-center ml-8 text-xs sm:text-sm md:text-base">
