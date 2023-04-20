@@ -102,12 +102,10 @@ export default function About() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center gap-3 my-5 md:flex-row">
-          {/* <Link href={`/experience/4`} locale={locale}> */}
+        {/* <div className="flex flex-col items-center gap-3 my-5 md:flex-row">
           <h2 className="text-sm font-bold text-slate-900 dark:text-yellow-400 md:text-base lg:text-lg">
             {t("about.experiences.job4.timeline")}
           </h2>
-          {/* </Link> */}
 
           <p className="hidden md:block">
             <MdOutlineForward />
@@ -115,9 +113,9 @@ export default function About() {
           <p className="text-xs font-medium md:text-base lg:text-lg">
             {t("about.experiences.job4.detail")}
           </p>
-        </div>
+        </div> */}
 
-        <div className="flex flex-col items-center gap-3 md:flex-row">
+        <div className="flex flex-col items-center gap-3 mt-5 md:flex-row">
           <Link href={`/experience/5/freelance`} locale={locale}>
             <h2 className="flex items-center text-sm font-bold text-rose-600 dark:text-yellow-400 md:text-lg hover:scale-105">
               <span className="text-gray-900 dark:text-gray-300">

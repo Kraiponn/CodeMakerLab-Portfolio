@@ -78,7 +78,7 @@ export default function Experience() {
         </p>
         <p className="flex items-center ml-8 text-xs sm:text-sm md:text-base">
           <FaHandPointRight /> &nbsp;{" "}
-          {`Material UI, Bootstrap and Tailwind CSS`}
+          {`Material UI, Bootstrap, Tailwind CSS and etc.`}
         </p>
 
         <p className="flex items-center ml-8 text-xs sm:text-sm md:text-base">
@@ -87,6 +87,10 @@ export default function Experience() {
 
         <p className="flex items-center ml-8 text-xs sm:text-sm md:text-base">
           <FaHandPointRight /> &nbsp; {`React (NextJS), Vue, Angular`}
+        </p>
+
+        <p className="flex items-center ml-8 text-xs sm:text-sm md:text-base">
+          <FaHandPointRight /> &nbsp; {`Kotlin and Dart(Flutter)`}
         </p>
 
         <p className="flex items-center ml-8 text-xs sm:text-sm md:text-base">
